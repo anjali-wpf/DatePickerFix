@@ -19,10 +19,8 @@
                       ItemsSource="{Binding AgeGroups}" />
             <Label x:Name="dateLabel"
                    Content="Date:" />
-            <DatePicker x:Name="date" AutomationProperties.LiveSetting="Assertive" SelectedDateChanged="date_SelectedDateChanged" CalendarOpened="date_CalendarOpened" DateValidationError="date_DateValidationError"    
+            <DatePicker x:Name="date" AutomationProperties.LiveSetting="Assertive" DateValidationError="date_DateValidationError"    
                         SelectedDate="{Binding Date, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock x:Name="ErrorTextBlock" HorizontalAlignment="Right" Visibility="Collapsed"
-                               AutomationProperties.LiveSetting="Assertive" />
             <Button Content="OK" />
         </StackPanel>
     </Grid>
